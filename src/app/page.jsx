@@ -84,7 +84,7 @@ export default function Home() {
       setLoading(true);
       try {
         const buffer = Buffer.from(image, "base64");
-        const blob = new Blob([buffer);
+        const blob = new Blob([buffer], { type: "image/jpeg" });
 
         
         console.log("Blob size:", blob.size);
